@@ -1,0 +1,79 @@
+header {
+    background-color: #f0f8ff;
+    padding: 45px 0;
+
+    .header_content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 29px;
+        align-items: center;
+
+        .LOGO {
+            img {
+                height: 70px;
+                width: 131px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Thêm đổ bóng */
+                border: 2px solid rgba(0, 0, 0, 0.1); /* Thêm viền */
+                padding: 5px;
+                background-color: white; /* Đảm bảo nền logo là màu trắng */
+                border-radius: 5px; /* Bo tròn các góc một chút */
+            }
+        }
+
+        .header_right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .hotline {
+                padding-right: 10px;
+            }
+            p {
+                margin: 0;
+                color: #448aff;
+                font-weight: bold;
+                font-size: 1rem;
+                margin-left: 10px;
+            }
+            .item_icon {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+
+                a {
+                    text-decoration: none;
+                }
+                .ic {
+                    border: 1px solid #448aff;
+                    padding: 7px 10px;
+                    border-radius: 50%;
+                    i {
+                        font-size: 20px;
+                        color: #448aff;
+                    }
+                }
+            }
+            .input_Search {
+                position: relative;
+                .txtSearch {
+                    height: 40px;
+                    width: 175px;
+                    line-height: 40px;
+                    border: 2px solid #448aff;
+                    border-radius: 20px;
+                    padding: 0 40px 0 15px;
+                    color: #777;
+                    background: #fff;
+                    outline: none;
+                }
+                .icon_search {
+                    position: absolute;
+                    top: 50%;
+                    right: 5%;
+                    translate: -50% -50%;
+                }
+            }
+        }
+    }
+}

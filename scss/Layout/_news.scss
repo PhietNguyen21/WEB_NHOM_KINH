@@ -1,0 +1,130 @@
+.content_news {
+    .card_item {
+        .item_card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            img {
+                width: 100%;
+                height: 200px;
+                display: block;
+            }
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+    .text_right {
+        margin: 0;
+        padding: 15px;
+
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: orangered;
+            }
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination span {
+    color: #007bff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.pagination span:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination span.active {
+    background-color: #007bff;
+    color: white;
+    cursor: default;
+}
+.contentNews1 {
+    .line {
+        padding: 10px;
+        background-color: #f5f5f5;
+        a {
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: justify;
+        span {
+            font-weight: bold;
+        }
+    }
+    .imgGioiThieu {
+        position: relative;
+        .sdt {
+            background-color: #4e8af7; /* Chọn một màu xanh dương nhẹ nhàng */
+            color: white; /* Đảm bảo văn bản trên nền màu sẽ dễ đọc */
+            padding: 10px;
+            width: fit-content;
+            position: absolute;
+            bottom: 10px; /* Điều chỉnh vị trí bottom */
+            left: 50%; /* Chuyển vị trí về left */
+            transform: translateX(-50%); /* Thay đổi dấu từ dương sang âm để căn giữa */
+            font-weight: bold;
+        }
+    }
+    .contactShop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        p {
+            color: #ff0000;
+            font-weight: bold;
+            text-align: center;
+            span {
+                color: black;
+            }
+        }
+    }
+    .lineBot {
+        height: 2px;
+        width: 100%;
+        background-color: #cfcfcf;
+    }
+    .newLienQuan {
+        span {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            color: #448aff;
+            border-bottom: 2px solid #448aff;
+            cursor: pointer;
+        }
+        ul {
+            list-style: circle;
+            li {
+                margin-top: 10px;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

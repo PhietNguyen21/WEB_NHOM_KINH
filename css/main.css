@@ -1,0 +1,470 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  background-color: white;
+}
+
+header {
+  background-color: #f0f8ff;
+  padding: 45px 0;
+}
+header .header_content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 29px;
+  align-items: center;
+}
+header .header_content .LOGO img {
+  height: 70px;
+  width: 131px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Thêm đổ bóng */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Thêm viền */
+  padding: 5px;
+  background-color: white; /* Đảm bảo nền logo là màu trắng */
+  border-radius: 5px; /* Bo tròn các góc một chút */
+}
+header .header_content .header_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header_content .header_right .hotline {
+  padding-right: 10px;
+}
+header .header_content .header_right p {
+  margin: 0;
+  color: #448aff;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+header .header_content .header_right .item_icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+header .header_content .header_right .item_icon a {
+  text-decoration: none;
+}
+header .header_content .header_right .item_icon .ic {
+  border: 1px solid #448aff;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+header .header_content .header_right .item_icon .ic i {
+  font-size: 20px;
+  color: #448aff;
+}
+header .header_content .header_right .input_Search {
+  position: relative;
+}
+header .header_content .header_right .input_Search .txtSearch {
+  height: 40px;
+  width: 175px;
+  line-height: 40px;
+  border: 2px solid #448aff;
+  border-radius: 20px;
+  padding: 0 40px 0 15px;
+  color: #777;
+  background: #fff;
+  outline: none;
+}
+header .header_content .header_right .input_Search .icon_search {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  translate: -50% -50%;
+}
+
+.nav_bar {
+  padding: 0 !important;
+  background-color: #f0f8ff; /* Thêm màu nền cho navbar */
+  transform: translateY(-50%);
+}
+.nav_bar .nav_bar_list {
+  background-color: #333;
+  padding: 20px;
+  display: flex; /* Sử dụng flexbox để sắp xếp các mục menu theo hàng ngang */
+  justify-content: space-between; /* Phân phối khoảng trống đều giữa các mục menu */
+  align-items: center; /* Căn giữa các mục menu theo chiều dọc */
+  list-style: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.nav_bar .nav_bar_list li {
+  display: inline;
+}
+.nav_bar .nav_bar_list li a {
+  text-decoration: none;
+  color: #ccc;
+  padding: 10px; /* Thêm khoảng cách giữa các mục menu */
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động */
+  position: relative;
+}
+.nav_bar .nav_bar_list li a::after {
+  content: "";
+  position: absolute;
+  background: #448aff;
+  width: 100%;
+  height: 2px;
+  bottom: 15%;
+  left: -2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+.nav_bar .nav_bar_list li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+.nav_bar .nav_bar_list li:hover a {
+  color: #448aff; /* Thêm màu nền khi rê chuột */
+}
+.nav_bar .nav_bar_list li.active a {
+  color: #448aff;
+}
+.nav_bar .nav_bar_list li.active a::after {
+  transform: scaleX(1);
+}
+
+.carousel {
+  border-radius: 4px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5); /* Màu sắc của các chấm tròn */
+  border-radius: 50%; /* Để làm cho chấm tròn */
+  transition: background-color 0.6s ease; /* Hiệu ứng khi hover */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Màu sắc của chấm tròn hiện tại */
+}
+
+.product .product_container {
+  padding: 0 !important;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .title {
+  text-align: center;
+  background-color: #448aff;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #eeecec;
+  text-transform: uppercase;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .title p {
+  margin-bottom: 0;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .menu_nhomKinh {
+  list-style: none;
+  padding-left: 0;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .menu_nhomKinh li {
+  padding: 10px;
+  padding-left: 10px;
+  background-color: rgba(245, 245, 245, 0.6588235294);
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .menu_nhomKinh li a {
+  font-size: 14px;
+  color: #484848;
+  display: inline-block;
+  width: 100%;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .menu_nhomKinh li:hover {
+  background-color: #eeecec;
+}
+.product .product_container .product_left .MENU_PRODUCT .item_menu .menu_nhomKinh li:hover a {
+  text-decoration: none;
+  color: #448aff;
+}
+.product .product_container .product_left .MENU_PRODUCT .menu5 .menu_nhomKinh li {
+  padding-left: 0;
+  border-bottom: 2px solid #ccc;
+  background-color: unset;
+}
+.product .product_container .product_left .MENU_PRODUCT .menu5 .menu_nhomKinh li:hover {
+  background-color: unset;
+}
+.product .product_container .product_left .MENU_PRODUCT .menu5 .menu_nhomKinh li:hover a {
+  text-decoration: none;
+  color: orangered;
+}
+.product .product_container .product_right .group-title .title {
+  color: #448aff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.product .product_container .product_right .group-title .title::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #448aff;
+}
+.product .product_container .product_right .product_right_content .text_right {
+  padding: 15px 0;
+}
+.product .product_container .product_right .product_right_content .text_right a {
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+}
+
+footer {
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 20px 0;
+}
+footer .footer_container {
+  padding-left: 0;
+}
+footer .footer_container .contact .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #448aff;
+  padding-bottom: 10px;
+}
+footer .footer_container .contact p {
+  font-size: 14px;
+}
+footer .footer_container .contact p a {
+  font-weight: bold;
+}
+footer .footer_container .contact p a:hover {
+  text-decoration: none;
+}
+footer .footer_container .gioiThieu .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #448aff;
+  padding-bottom: 10px;
+}
+footer .footer_container .gioiThieu ul {
+  padding-left: 0;
+}
+footer .footer_container .gioiThieu ul li {
+  padding: 10px 0;
+  list-style: none;
+}
+footer .footer_container .gioiThieu ul li a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+footer .footer_container .gioiThieu ul li:hover a {
+  color: #448aff;
+}
+
+.content_gioiThieu .line {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.content_gioiThieu .line a {
+  font-size: 12px;
+  text-decoration: none;
+}
+.content_gioiThieu p {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: justify;
+}
+.content_gioiThieu .lineBot {
+  height: 2px;
+  width: 100%;
+  background-color: #cfcfcf;
+}
+
+.content_news .card_item .item_card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.content_news .card_item .item_card img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+.content_news .card_item .item_card:hover {
+  transform: translateY(-10px);
+}
+.content_news .text_right {
+  margin: 0;
+  padding: 15px;
+}
+.content_news .text_right a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+.content_news .text_right a:hover {
+  color: orangered;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination span {
+  color: #007bff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination span:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination span.active {
+  background-color: #007bff;
+  color: white;
+  cursor: default;
+}
+
+.contentNews1 .line {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.contentNews1 .line a {
+  font-size: 12px;
+  text-decoration: none;
+}
+.contentNews1 p {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+}
+.contentNews1 p span {
+  font-weight: bold;
+}
+.contentNews1 .imgGioiThieu {
+  position: relative;
+}
+.contentNews1 .imgGioiThieu .sdt {
+  background-color: #4e8af7; /* Chọn một màu xanh dương nhẹ nhàng */
+  color: white; /* Đảm bảo văn bản trên nền màu sẽ dễ đọc */
+  padding: 10px;
+  width: fit-content;
+  position: absolute;
+  bottom: 10px; /* Điều chỉnh vị trí bottom */
+  left: 50%; /* Chuyển vị trí về left */
+  transform: translateX(-50%); /* Thay đổi dấu từ dương sang âm để căn giữa */
+  font-weight: bold;
+}
+.contentNews1 .contactShop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contentNews1 .contactShop p {
+  color: #ff0000;
+  font-weight: bold;
+  text-align: center;
+}
+.contentNews1 .contactShop p span {
+  color: black;
+}
+.contentNews1 .lineBot {
+  height: 2px;
+  width: 100%;
+  background-color: #cfcfcf;
+}
+.contentNews1 .newLienQuan span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #448aff;
+  border-bottom: 2px solid #448aff;
+  cursor: pointer;
+}
+.contentNews1 .newLienQuan ul {
+  list-style: circle;
+}
+.contentNews1 .newLienQuan ul li {
+  margin-top: 10px;
+}
+.contentNews1 .newLienQuan ul li a {
+  text-decoration: none;
+}
+
+.contact_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #0078d7;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+}
+
+.form-group span {
+  color: red;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

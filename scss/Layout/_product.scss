@@ -1,0 +1,101 @@
+.product {
+    .product_container {
+        padding: 0 !important;
+        .product_left {
+            .MENU_PRODUCT {
+                .item_menu {
+                    .title {
+                        text-align: center;
+                        background-color: #448aff;
+                        padding: 10px 0;
+                        font-weight: bold;
+                        color: #eeecec;
+                        text-transform: uppercase;
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .menu_nhomKinh {
+                        list-style: none;
+                        padding-left: 0;
+                        li {
+                            padding: 10px;
+                            padding-left: 10px;
+                            background-color: #f5f5f5a8;
+                            border-bottom: 2px solid white;
+                            cursor: pointer;
+                            transition: all 0.8s;
+                            a {
+                                // text-align: none;
+                                font-size: 14px;
+                                color: #484848;
+                                display: inline-block;
+                                width: 100%;
+                            }
+                            &:hover {
+                                background-color: #eeecec;
+                                a {
+                                    text-decoration: none;
+                                    color: #448aff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .menu5 {
+                    .menu_nhomKinh {
+                        li {
+                            padding-left: 0;
+                            border-bottom: 2px solid #ccc;
+                            background-color: unset;
+                            &:hover {
+                                background-color: unset;
+                                a {
+                                    text-decoration: none;
+                                    color: orangered;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // PRODUCT_CONTENT
+        .product_right {
+            .group-title {
+                .title {
+                    color: #448aff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -10%;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #448aff;
+                    }
+                }
+            }
+            .product_right_content {
+                // .card_item {
+                //     .item_card {
+                //     }
+                // }
+                .text_right {
+                    padding: 15px 0;
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
