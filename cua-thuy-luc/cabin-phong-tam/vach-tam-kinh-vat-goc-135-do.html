@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHOM KINH TRANG ANH</title>
+
+
+
+    <!-- BOOSTRAP -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="header_content container">
+            <div class="LOGO">
+                <a href="#"> <img class="img-fluid img_LOGO" src="../../img/LOGO.jpg" alt="LOGO TRANG ANH"></a>
+
+            </div>
+            <div class="header_right">
+                <div class="hotline item_icon">
+                    <div class="ic"><i class="fa-solid fa-phone-volume"></i></div>
+                    <a href="tel:0946212022">
+                        <p style="color:black">HOTLINE</p>
+                        <p>0946212022</p>
+                    </a>
+                </div>
+                <div class="email item_icon">
+                    <div class="ic"><i class="fa-solid fa-envelope"></i></div>
+                    <a href="mailto:nphat8298@gmail.com">
+                        <p style="color:black">GMAIL</p>
+                        <p>nphat8298@gmail.com</p>
+                    </a>
+                </div>
+                <div class="search input_Search">
+                    <form action="#" method="get"></form>
+                    <input type="text" class="txtSearch" name="q" placeholder="Nhập từ khóa tìm kiếm">
+                    <p class="icon_search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="nav_bar container">
+        <ul class="nav_bar_list" id="myLIST">
+            <li class="item_bar active"><a href="../../index.html"><span>Trang chủ</span></a></li>
+            <li class="item_bar"><a href="../../gioithieu.html"><span>Giới thiệu</span></a></li>
+            <li class="item_bar"><a href="../../news.html">Tin Tức</a></li>
+            <li class="item_bar"><a href="../../congtrinh.html">Công Trình</a></li>
+            <li class="item_bar"><a href="../../tuyendung.html">Tuyển dụng</a></li>
+            <li class="item_bar"><a href="../../contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CAROUSEL -->
+
+
+
+    <!-- PRODUCT -->
+    <div class="product">
+        <div class="container product_container">
+            <div class="row">
+                <div class="col-3 product_left">
+                    <div class="MENU_PRODUCT">
+                        <div class="item_menu menu1">
+                            <div class="title">
+                                <p>Cửa Nhôm Kính</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="#">Cửa nhôm Việt Pháp</a></li>
+                                <li><a href="#">Cửa đi nhôm kính </a></li>
+                                <li><a href="#">Cửa sổ nhôm kính </a></li>
+                                <li><a href="#">Vách ngăn nhôm kính </a></li>
+                                <li><a href="#">Tủ nhôm kính, chạn bát đĩa</a></li>
+                                <li><a href="#">Cửa nhôm Xingfa nhập khẩu </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu2">
+                            <div class="title">
+                                <p>CỬA THỦY LỰC</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li onclick="showSection('cuaKinhLua')"><a href="../cua-kinh-lua/cua-kinh-lua.html">Cửa
+                                        kính lùa</a></li>
+                                <li onclick="showSection('kinhCuongLuc')"><a
+                                        href="../cua-kinh-cuong-luc/kinh-cuong-luc.html">Cửa kính cường lực </a></li>
+                                <li onclick="showSection('vachKinhCuongLuc')">
+                                    <a href="../vach-kinh-cuong-luc/vach-kinh-cuong-luc.html">Vách kính cường lực</a>
+                                </li>
+                                <li onclick="showSection('cabinPhongTam')"><a
+                                        href="../cabin-phong-tam/cabin-phong-tam.html">Cabin phòng tắm </a></li>
+                                <li onclick="showSection('kinhOpBep')"><a href="../kinh-op-bep/kinh-op-bep.html">Kính ốp
+                                        bếp </a></li>
+                                <li onclick="showSection('lanCanKinh')"><a href="../lan-can-kinh/lan-can-kinh.html">Lan
+                                        can kính</a></li>
+                                <li onclick="showSection('cauThangKinh')"><a
+                                        href="../cau-thang-kinh/cau-thang-kinh.html">Cầu thang kính </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu3">
+                            <div class="title">
+                                <p>Báo Giá</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../../bao-gia/bao-gia-cua-nhom/bao-gia-cua-nhom-kinh.html">Báo giá cửa nhôm
+                                        kính</a></li>
+                                <li><a href="../../bao-gia/bao-gia-kinh-cuong-luc/bao-gia-kinh-cuong-luc.html">Báo giá
+                                        kính
+                                        cường lực </a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu4">
+                            <div class="title">
+                                <p>Hỗ trợ trực tuyến</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+
+                                <li style="display: flex;align-items: center;justify-content: start;"><a
+                                        href="zalo:0946212022"><img style="width: 40px;height: 40px;margin-right: 20px"
+                                            src="../../img/Icon_of_Zalo.svg.webp" alt="zalo"> </a>
+
+                                    <a href="tel:0946212022"><i style=" color:#448aff;font-size: 30px;"
+                                            class=" fa fa-phone-volume "></i> </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu5">
+                            <div class="title">
+                                <p>Tin Tức Mới</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../../NEWS/8-ly-do-khien-cua-kinh-cuong-luc-duoc-ua-chuong-hien-nay.html">8
+                                        lý do khiến cửa kính cường lực được ưa chuộng hiện nay</a></li>
+                                <li><a href="../../NEWS/thiet-ke-nha-o-phong-cach-hien-dai-xu-huong-moi.html">Thiết kế
+                                        nhà ở phong cách hiện đại - xu hướng mới kính </a></li>
+                                <li><a href="../bao-gia-kinh-cuong-luc/bao-gia-lan-can-cau-thang-kinh.html">Lan can kính
+                                        cường lực giá bao nhiêu? </a></li>
+                                <li><a
+                                        href="../../NEWS/chia-se-ve-vach-kinh-thong-minh-cho-van-phong-dep-hien-dai.html">Chia
+                                        sẻ về vách kính thông minh cho văn phòng đẹp hiện đại </a></li>
+                                <li><a href="../../NEWS/lam-tu-bep-tu-bep-nhom-kinh-gia-re-o-dau-hai-long-nhat.html">Làm
+                                        tủ bếp nhôm kính giá rẻ ở đâu hài lòng nhất?</a></li>
+                                <li><a
+                                        href="../../NEWS/luu-y-khi-lua-chon-cua-nhom-cao-cap-viet-phap-xingfa-chinh-hang.html">Lưu
+                                        ý khi lựa chọn cửa nhôm cao cấp Việt Pháp / Xingfa chính hãng </a>
+                                </li>
+                                <li><a href="../../NEWS/thiet-ke-thi-cong-cua-nhom-kinh-hop-phong-thuy.html">Thiết kế
+                                        thi công cửa nhôm kính hợp phong thuỷ</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 content_gioiThieu content_news">
+                    <div class="line">
+                        <a href="../../index.html">Trang chủ /</a>
+                        <a href="#">Sản phẩm /</a>
+                        <a href="#" style="font-weight: bold;color: black;">Vách tắm kính vát góc 135 độ</a>
+                    </div>
+                    <div class="contentNews1" id="content">
+
+                        <div style="margin-top: 20px;">
+                            <h3> Vách tắm kính vát góc 135 độ</h3>
+                            <p> Vách tắm kính màn đến một không gian sang trọng góp phần tạo nên cảm giác thỏai mái thư
+                                giãn cho người sử dụng. Thiết kế mềm mại, vách kính chắn nước ra bên ngoài giúp cho
+                                phòng tắm luôn sạch sẽ khô ráo.
+
+
+
+                            </p>
+
+                            <p> Vách tắm bằng kính là vật dụng không thể thiếtu trong trang trí nội ngoại thất trong
+                                phòng tắm. Mang vẻ hiện đại, phòng tắm kính thay thế cho tường xây, vách gỗ, nhựa,...
+
+                            </p>
+                            <p> Nhôm kính <span>Trang Anh</span> chuyên thi công vách kính phòng tắm giá rẻ tại Hà Nội.
+                                Cam kết chất
+                                lượng và thái độ phục vụ tuyệt vời, hẳn quý khách sẽ hài lòng với dịch vụ của chúng tôi!
+
+                            </p>
+
+                            <p style="width: fit-content; background-color: #ffff99;font-size: 18px;font-weight: bold;">
+                                Vách tắm kính vát 135 độ là gì?
+                            </p>
+
+                            <p> Là vách kính không khung được gắn các bản lề 135 độ giữa các tấm kính với nhau. Thông
+                                thường vách 135 độ gồm 3 tấm kính cường lực có độ dày 10 ly.
+
+
+
+                            </p>
+
+                            <p> Bản lề sàn và khung inox tròn 304 để cố định vách, sử dụng cửa mở quay 1 cánh để mở ra
+                                ngòai hoặc vào trong.
+                            </p>
+                            <p> Thiết kế góc 135 độ vát tạo nên sự mềm mại cho vách tắm, đây là mẫu vách tắm được rất
+                                nhiều khách hàng chọn lựa để lắp đặt cho phòng tắm nhà mình.
+                            </p>
+                            <p>Thiết kế đẹp mắt tạo nên phong cách độc đáo, tinh tế. Mặc dù vách vát, các tấm kính được
+                                lắp đặt theo các hướng khác nhau nhưng chúng vô cùng chắc chắn và an tòan.
+
+                            </p>
+                            <div class="imgGioiThieu" style="text-align: center;">
+                                <img width="500px" src="../../img/vach-ngan-kinh-135.jpg" alt="cuaKinhLua">
+                                <div class="sdt">Nhôm Kính Trang Anh 0946.212.022</div>
+                            </div>
+
+
+                            <p class="mt-2" style="text-align: center;font-weight: bold;font-size: 17px;">
+                                Vách kính tắm vát 135 độ mềm mại và sang trọng
+
+
+                            </p>
+                            <p style="width: fit-content; background-color: #ffff99;font-size: 18px;font-weight: bold;">
+                                Ưu điểm của vách tắm kính cửa mở trượt lùa</p>
+
+                            <p> - Vách kính tạo nên sự thống nhất trong việc bố trí phòng tắm gọn gàng sạch sẽ, tiết
+                                kiệm diện tích. Sự kiên kết không gian giữa các vị trí khách nhau mang lại vẻ sang trọng
+                                và hiện đại cho phòng tắm.
+                            </p>
+                            <p>- Vách tắm kính 135 độ giứ cho phòng tắm luôn sạch sẽ và khô ráo, cản nước trong vách
+                                kính tràn ra bên ngoài với hệ thống giăng và đá chắn nước hiệu quả.
+
+                            </p>
+                            <p>- Vách tắm kính giữ ẩm và ấm trong mùa đông khi sử dụng nước nóng trong phòng tắm và tạo
+                                nên sự mát mẻ trong mùa hè.
+
+                            </p>
+
+
+
+                            <p style="width: fit-content; background-color: #ffff99;font-size: 18px;font-weight: bold;">
+                                Đơn vị thi công phòng tắm kính chuyên nghiệp tại Hà Nội</p>
+                            <p>Tại Hà Nội có rất nhiều đơn vị thi công phòng tắm kính nói riêng và kính cường lực noí
+                                chung thế nhưng khách hàng cần chọn đơn vị thật sự chuyên nghiệp, uy tín để tránh bị các
+                                đối tượng gian lừa bịp bằng các sản phẩm kém chất lượng.
+
+                            </p>
+                            <p>Trang Anh Window là đơn vị chuyên thi công nhôm kính, vách kính phòng tắm uy tín và
+                                chuyên
+                                nghiệp nhiều năm tại Hà Nội. Chúng tôi là một tập thể đòan kết thành lập casch đây 10
+                                năm mang lại rất nhiều sản phẩm nhôm kính chất lượng đến tay người dùng Việt Nam. Đến
+                                với Trang Anh quý khách hàng sẽ được phục vụ tốt nhất từ các tiêu chí sau:
+
+                            </p>
+                            <p>Lên bản vẽ 3D gửi khách hàng để tham khảo qua về sản phẩm</p>
+                            <p>Báo giá trọn gói, không phát sinh thêm các chi phí ngoài</p>
+                            <p>Chế độ bảo hành, bảo trì nhanh chóng, thường xuyên</p>
+                            <p>Đội ngũ thợ nhiều kinh nghiệm, nhiệt huyết, tận tâm </p>
+                            <p>Quý khách hàng có nhu cầu tư vấn, báo giá, thi công vui lòng liên hệ số hotline của chúng
+                                tôi 0946212022</p>
+                            <div class="contactShop">
+                                <p>Nhôm kính Trang Anh</p>
+
+                                <p><span>Địa chỉ:</span> 14 Vũ Hữu - Thanh Xuân - Hà Nội</p>
+
+                                <p><span>Liên hệ:</span> 0946.212.022</p>
+
+                                <p><span>Email:</span> nhomkinhnhatanh@gmail.com</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <!-- SẢN PHẨM LIÊN QUAN -->
+
+                    <div class="product_right mt-4">
+                        <div class="content-section  kinhCuongLuc row_card" id="kinhCuongLuc1">
+                            <div class="group-title mb-4">
+                                <span class="title mb-4" style="font-size: 16px;">Sản Phẩm Liên Quan</span>
+                            </div>
+                            <div class="row product_right_content content_news">
+                                <div class="col-md-4 mb-2  ">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./vach-kinh-phong-tam-nho.html">
+                                                <img class="img-fluid" src="../../img/vach-kinh-phong-tam-nho.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./vach-kinh-phong-tam-nho.html">
+                                            VÁCH KÍNH PHÒNG TẮM NHỎ</a></div>
+
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./vach-tam-kinh-mo-quay-phang-180-do.html">
+                                                <img class="img-fluid" src="../../img/Vach-kinh-mo-quay-180.png"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./vach-tam-kinh-mo-quay-phang-180-do.html">
+                                            VÁCH TẮM KÍNH MỞ QUAY PHẲNG 180 ĐỘ</a></div>
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./vach-kinh-phong-tam-vuong-goc-90-do.html">
+                                                <img class="img-fluid" src="../../img/vach_kinh_90.jpg" alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./vach-kinh-phong-tam-vuong-goc-90-do.html">
+                                            VÁCH KÍNH PHÒNG TẮM VUÔNG GÓC 90</a></div>
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./vach-tam-kinh-vat-goc-135-do.html">
+                                                <img class="img-fluid" src="../../img/vach-ngan-kinh-135.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./vach-tam-kinh-vat-goc-135-do.html">
+                                            VÁCH TẮM KÍNH VÁT GÓC 135 ĐỘ</a></div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_container">
+            <div class="row">
+                <div class="col-4 contact">
+                    <div class="title">Thông tin liên hệ</div>
+                    <h5>Showroom Nhôm Kính Trang Anh</h5>
+                    <p>Cơ sở 1:Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
+                    <p>Cơ sở 2: Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
+                    <p><a href="tel:0946212022"><span>Hotline</span>: 0946212022</a>
+                    </p>
+                    <p> <a href=" tel:0946212022"><span>Fax</span> : 0946212022</a></p>
+                </div>
+                <div class=" col-4 gioiThieu">
+                    <div class="title">Giới thiệu</div>
+                    <div style="display: flex;align-items: center;">
+                        <ul style="padding-right: 100px;">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="news.html">Tin tức</a></li>
+                            <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="congtrinh.html">Công trình</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="../../img/dmca_protected_sml_120i.png" alt="">
+                    </div>
+                </div>
+                <div class=" col-4 gioiThieu">
+                    <div class="title">Sản phẩm</div>
+                    <div style="display: flex;align-items: center;">
+                        <ul style="padding-right: 40px;">
+                            <li><a href="">Cửa Kính Lùa</a></li>
+                            <li><a href="">Vách Kính Cường Lực</a></li>
+                            <li><a href="">Kính Ốp Bếp</a></li>
+                            <li><a href="">Cầu Thang Kính</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Cửa Kính Cường Lực</a></li>
+                            <li><a href="">Cabin Phòng Tắm</a></li>
+                            <li><a href="">Lan Can Kính</a></li>
+                            <li><a href="">Trạn nhôm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Website: https://nhomkinhnhatanh.com</p>
+                <p style="font-weight: bold;"><a style="text-decoration: none;" href="zalo:0946212022">Zalo:
+                        0946212022</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="cpr" style="background-color: #fff;padding: 20px;">
+        <div class="container" style="font-size: 12px;">
+            Copyright @ 2024 Nhôm Kính Nhật Anh. Developed by Nhôm kính Nhật Anh
+        </div>
+    </div>
+    <!-- BOOSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/owl_carousel/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script> -->
+</body>
+
+</html>

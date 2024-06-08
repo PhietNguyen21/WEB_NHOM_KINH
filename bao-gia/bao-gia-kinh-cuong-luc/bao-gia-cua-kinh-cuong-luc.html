@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHOM KINH TRANG ANH</title>
+
+
+
+    <!-- BOOSTRAP -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="header_content container">
+            <div class="LOGO">
+                <a href="#"> <img class="img-fluid img_LOGO" src="../../img/LOGO.jpg" alt="LOGO TRANG ANH"></a>
+
+            </div>
+            <div class="header_right">
+                <div class="hotline item_icon">
+                    <div class="ic"><i class="fa-solid fa-phone-volume"></i></div>
+                    <a href="tel:0946212022">
+                        <p style="color:black">HOTLINE</p>
+                        <p>0946212022</p>
+                    </a>
+                </div>
+                <div class="email item_icon">
+                    <div class="ic"><i class="fa-solid fa-envelope"></i></div>
+                    <a href="mailto:nphat8298@gmail.com">
+                        <p style="color:black">GMAIL</p>
+                        <p>nphat8298@gmail.com</p>
+                    </a>
+                </div>
+                <div class="search input_Search">
+                    <form action="#" method="get"></form>
+                    <input type="text" class="txtSearch" name="q" placeholder="Nhập từ khóa tìm kiếm">
+                    <p class="icon_search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="nav_bar container">
+        <ul class="nav_bar_list" id="myLIST">
+            <li class="item_bar active"><a href="../../index.html"><span>Trang chủ</span></a></li>
+            <li class="item_bar"><a href="../../gioithieu.html"><span>Giới thiệu</span></a></li>
+            <li class="item_bar"><a href="../../news.html">Tin Tức</a></li>
+            <li class="item_bar"><a href="../../congtrinh.html">Công Trình</a></li>
+            <li class="item_bar"><a href="../../tuyendung.html">Tuyển dụng</a></li>
+            <li class="item_bar"><a href="../../contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CAROUSEL -->
+
+
+
+    <!-- PRODUCT -->
+    <div class="product">
+        <div class="container product_container">
+            <div class="row">
+                <div class="col-3 product_left">
+                    <div class="MENU_PRODUCT">
+                        <div class="item_menu menu1">
+                            <div class="title">
+                                <p>Cửa Nhôm Kính</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="#">Cửa nhôm Việt Pháp</a></li>
+                                <li><a href="#">Cửa đi nhôm kính </a></li>
+                                <li><a href="#">Cửa sổ nhôm kính </a></li>
+                                <li><a href="#">Vách ngăn nhôm kính </a></li>
+                                <li><a href="#">Tủ nhôm kính, chạn bát đĩa</a></li>
+                                <li><a href="#">Cửa nhôm Xingfa nhập khẩu </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu2">
+                            <div class="title">
+                                <p>CỬA THỦY LỰC</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li onclick="showSection('cuaKinhLua')"><a href="../cua-kinh-lua/cua-kinh-lua.html">Cửa
+                                        kính lùa</a></li>
+                                <li onclick="showSection('kinhCuongLuc')"><a
+                                        href="../cua-kinh-cuong-luc/kinh-cuong-luc.html">Cửa kính cường lực </a></li>
+                                <li onclick="showSection('vachKinhCuongLuc')">
+                                    <a href="../vach-kinh-cuong-luc/vach-kinh-cuong-luc.html">Vách kính cường lực</a>
+                                </li>
+                                <li onclick="showSection('cabinPhongTam')"><a
+                                        href="../cabin-phong-tam/cabin-phong-tam.html">Cabin phòng tắm </a></li>
+                                <li onclick="showSection('kinhOpBep')"><a href="../kinh-op-bep/kinh-op-bep.html">Kính ốp
+                                        bếp </a></li>
+                                <li onclick="showSection('lanCanKinh')"><a href="../lan-can-kinh/lan-can-kinh.html">Lan
+                                        can kính</a></li>
+                                <li onclick="showSection('cauThangKinh')"><a
+                                        href="../cau-thang-kinh/cau-thang-kinh.html">Cầu thang kính </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu3">
+                            <div class="title">
+                                <p>Báo Giá</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../../bao-gia/bao-gia-cua-nhom/bao-gia-cua-nhom-kinh.html">Báo giá cửa nhôm
+                                        kính</a></li>
+                                <li><a href="../../bao-gia/bao-gia-kinh-cuong-luc/bao-gia-kinh-cuong-luc.html">Báo giá
+                                        kính
+                                        cường lực </a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu4">
+                            <div class="title">
+                                <p>Hỗ trợ trực tuyến</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+
+                                <li style="display: flex;align-items: center;justify-content: start;"><a
+                                        href="zalo:0946212022"><img style="width: 40px;height: 40px;margin-right: 20px"
+                                            src="../../img/Icon_of_Zalo.svg.webp" alt="zalo"> </a>
+
+                                    <a href="tel:0946212022"><i style=" color:#448aff;font-size: 30px;"
+                                            class=" fa fa-phone-volume "></i> </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu5">
+                            <div class="title">
+                                <p>Tin Tức Mới</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../../NEWS/8-ly-do-khien-cua-kinh-cuong-luc-duoc-ua-chuong-hien-nay.html">8
+                                        lý do khiến cửa kính cường lực được ưa chuộng hiện nay</a></li>
+                                <li><a href="../../NEWS/thiet-ke-nha-o-phong-cach-hien-dai-xu-huong-moi.html">Thiết kế
+                                        nhà ở phong cách hiện đại - xu hướng mới kính </a></li>
+                                <li><a href="../bao-gia-kinh-cuong-luc/bao-gia-lan-can-cau-thang-kinh.html">Lan can kính
+                                        cường lực giá bao nhiêu? </a></li>
+                                <li><a
+                                        href="../../NEWS/chia-se-ve-vach-kinh-thong-minh-cho-van-phong-dep-hien-dai.html">Chia
+                                        sẻ về vách kính thông minh cho văn phòng đẹp hiện đại </a></li>
+                                <li><a href="../../NEWS/lam-tu-bep-tu-bep-nhom-kinh-gia-re-o-dau-hai-long-nhat.html">Làm
+                                        tủ bếp nhôm kính giá rẻ ở đâu hài lòng nhất?</a></li>
+                                <li><a
+                                        href="../../NEWS/luu-y-khi-lua-chon-cua-nhom-cao-cap-viet-phap-xingfa-chinh-hang.html">Lưu
+                                        ý khi lựa chọn cửa nhôm cao cấp Việt Pháp / Xingfa chính hãng </a>
+                                </li>
+                                <li><a href="../../NEWS/thiet-ke-thi-cong-cua-nhom-kinh-hop-phong-thuy.html">Thiết kế
+                                        thi công cửa nhôm kính hợp phong thuỷ</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 content_gioiThieu content_news">
+                    <div class="line">
+                        <a href="../../index.html">Trang chủ /</a>
+                        <a href="#">Sản phẩm /</a>
+                        <a href="#" style="font-weight: bold;color: black;">Báo giá cửa kính cường lực
+                        </a>
+                    </div>
+                    <div class="contentNews1" id="content">
+
+                        <div style="margin-top: 20px;">
+
+
+
+                            <p style="width: fit-content; background-color: #ffff99;font-size: 18px;font-weight: bold;">
+                                Báo giá chi tiết phân tách cửa kính cường lực và phụ kiện
+                            </p>
+
+
+                            <h3>Nhôm kính Trang Anh</h3>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Đơn giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="section-header">
+                                        <td colspan="3">KÍNH CƯỜNG LỰC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Kính cường lực 8mm</td>
+
+                                        <td>520.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Kính cường lực 10mm</td>
+                                        <td>700.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Kính cường lực 12mm</td>
+
+                                        <td>800.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Kính dán an toàn 8.38mm</td>
+
+                                        <td>480.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Kính dán an toàn 10.38mm</td>
+
+                                        <td>650.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Kính dán an toàn 12.38mm</td>
+
+                                        <td>850.000</td>
+                                    </tr>
+                                    <tr class="section-header">
+                                        <td colspan="3">PHỤ KIỆN</td>
+                                    </tr>
+                                    <tr class="section-header">
+                                        <td></td>
+                                        <td colspan="2" style="text-align: left;">Cửa kính cường lực mở quay (1 cánh
+                                            hoặc 2 cánh)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Bản lề sàn VVP FC34</td>
+
+                                        <td>1,150.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Kẹp vuông trên VVP</td>
+
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Kep vuông dưới VVP</td>
+
+                                        <td>250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Khóa sàn VVP</td>
+
+                                        <td>450.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Kẹp L VVP</td>
+
+                                        <td>380.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Kẹp ty VVP</td>
+
+                                        <td>380.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Tay nắm (nhiều loại) thủy tinh sọc xanh</td>
+
+                                        <td>350.000</td>
+                                    </tr>
+
+
+                                    <tr class="section-header">
+                                        <td></td>
+                                        <td colspan="2" style="text-align: left;">Cửa kính cường lực lùa</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Bánh xe lùa kính ống Φ 25</td>
+
+                                        <td>1.800.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Tay nắm âm</td>
+
+                                        <td>200.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Khóa bán nguyệt kép</td>
+
+                                        <td>450.000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Khóa bán nguyệt đơn</td>
+
+                                        <td>380.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Ray cửa</td>
+
+                                        <td>120.000/md</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                            <p class="mt-2"><span>Chú thích: </span></p>
+                            <p>- Giá chưa bao gồm thuế VAT và công lắp đặt 120.000đ/m2</p>
+
+                            <p>- Phụ kiện khách hàng có thể lựa chọn các loai phụ kiện giá thành rẻ hơn hoặc đắt hơn
+                                (ADLER, VPP, Hafla)</p>
+                            <p>- Thi công trong 3 ngày</p>
+                            <p>- Bảo hành 12 tháng phụ kiện</p>
+                            <p> - Khách hàng có thể yêu cầu phụ kiện giá cao hoặc thấp hơn. Trang Anh đang báo giá sản
+                                phẩm tốt nhất.</p>
+                            <div class="contactShop mt-3">
+                                <p>Nhôm kính Trang Anh</p>
+
+                                <p><span>Địa chỉ:</span> 14 Vũ Hữu - Thanh Xuân - Hà Nội</p>
+
+                                <p><span>Liên hệ:</span> 0946.212.022</p>
+
+                                <p><span>Email:</span> nhomkinhnhatanh@gmail.com</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <!-- SẢN PHẨM LIÊN QUAN -->
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_container">
+            <div class="row">
+                <div class="col-4 contact">
+                    <div class="title">Thông tin liên hệ</div>
+                    <h5>Showroom Nhôm Kính Trang Anh</h5>
+                    <p>Cơ sở 1:Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
+                    <p>Cơ sở 2: Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
+                    <p><a href="tel:0946212022"><span>Hotline</span>: 0946212022</a>
+                    </p>
+                    <p> <a href=" tel:0946212022"><span>Fax</span> : 0946212022</a></p>
+                </div>
+                <div class=" col-4 gioiThieu">
+                    <div class="title">Giới thiệu</div>
+                    <div style="display: flex;align-items: center;">
+                        <ul style="padding-right: 100px;">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="news.html">Tin tức</a></li>
+                            <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="congtrinh.html">Công trình</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="../../img/dmca_protected_sml_120i.png" alt="">
+                    </div>
+                </div>
+                <div class=" col-4 gioiThieu">
+                    <div class="title">Sản phẩm</div>
+                    <div style="display: flex;align-items: center;">
+                        <ul style="padding-right: 40px;">
+                            <li><a href="">Cửa Kính Lùa</a></li>
+                            <li><a href="">Vách Kính Cường Lực</a></li>
+                            <li><a href="">Kính Ốp Bếp</a></li>
+                            <li><a href="">Cầu Thang Kính</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Cửa Kính Cường Lực</a></li>
+                            <li><a href="">Cabin Phòng Tắm</a></li>
+                            <li><a href="">Lan Can Kính</a></li>
+                            <li><a href="">Trạn nhôm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Website: https://nhomkinhnhatanh.com</p>
+                <p style="font-weight: bold;"><a style="text-decoration: none;" href="zalo:0946212022">Zalo:
+                        0946212022</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="cpr" style="background-color: #fff;padding: 20px;">
+        <div class="container" style="font-size: 12px;">
+            Copyright @ 2024 Nhôm Kính Nhật Anh. Developed by Nhôm kính Nhật Anh
+        </div>
+    </div>
+    <!-- BOOSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/owl_carousel/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script> -->
+</body>
+
+</html>
