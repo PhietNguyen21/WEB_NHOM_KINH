@@ -549,6 +549,7 @@ th {
   .nav_bar .nav_bar_list {
     max-height: 250px;
     overflow: auto;
+    padding: 26px !important;
   }
   .nav_bar .nav_bar_list .item_bar {
     display: block;
@@ -571,6 +572,9 @@ th {
   }
   .product .product_container .row .product_right .group-title {
     text-align: center;
+  }
+  .product .product_container .row .product_right .group-title .title {
+    font-size: 18px;
   }
   .product .product_container .row .product_right .group-title .title::after {
     bottom: 0;

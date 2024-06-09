@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHOM KINH TRANG ANH</title>
-
-
-
+    <title>
+        NHÔM KÍNH TRANG ANH
+    </title>
+    <!-- ICON -->
+    <link rel="icon" type="image/x-icon" href="../../img/LOGO.jpg">
     <!-- BOOSTRAP -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -36,10 +37,11 @@
     <header>
         <div class="header_content container">
             <div class="LOGO">
-                <a href="#"> <img class="img-fluid img_LOGO" src="../../img/LOGO.jpg" alt="LOGO TRANG ANH"></a>
+                <a href="../../index.html"> <img class="img-fluid img_LOGO" src="../../img/LOGO.jpg"
+                        alt="LOGO TRANG ANH"></a>
 
             </div>
-            <div class="header_right">
+            <div class="header_right d-none d-md-flex">
                 <div class="hotline item_icon">
                     <div class="ic"><i class="fa-solid fa-phone-volume"></i></div>
                     <a href="tel:0946212022">
@@ -63,19 +65,54 @@
 
                 </div>
             </div>
+
+
+            <div class="d-block d-md-none bar" id="bar_dropDown" onclick="showHideNavBar()">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+
         </div>
 
     </header>
 
     <!-- NAVBAR -->
     <nav class="nav_bar container">
-        <ul class="nav_bar_list" id="myLIST">
+        <ul class="nav_bar_list d-none d-md-flex">
             <li class="item_bar active"><a href="../../index.html"><span>Trang chủ</span></a></li>
             <li class="item_bar"><a href="../../gioithieu.html"><span>Giới thiệu</span></a></li>
             <li class="item_bar"><a href="../../news.html">Tin Tức</a></li>
             <li class="item_bar"><a href="../../congtrinh.html">Công Trình</a></li>
             <li class="item_bar"><a href="../../tuyendung.html">Tuyển dụng</a></li>
             <li class="item_bar"><a href="../../contact.html">Liên hệ</a></li>
+        </ul>
+
+
+        <ul class="nav_bar_list d-block d-md-none" id="myLIST">
+            <li class="item_bar"><a href="../../cua-thuy-luc/cua-kinh-lua/cua-kinh-lua.html">Cửa kính lùa</a></li>
+            <li class="item_bar"><a href="../../cua-thuy-luc/cua-kinh-cuong-luc/kinh-cuong-luc.html">Cửa kính cường
+                    lực</a>
+            </li>
+            <li class="item_bar"><a href="../../cua-thuy-luc/vach-kinh-cuong-luc/vach-kinh-cuong-luc.html">Vách kính
+                    cường
+                    lực</a></li>
+            <li class="item_bar"><a href="../../cua-thuy-luc/cabin-phong-tam/cabin-phong-tam.html">Cabin phòng tắm</a>
+            </li>
+
+            <li class="item_bar"><a href="../../cua-thuy-luc/kinh-op-bep/kinh-op-bep.html">Kính ốp bếp</a></li>
+            <li class="item_bar"><a href="../../cua-thuy-luc/lan-can-kinh/lan-can-kinh.html">Lan can kính</a></li>
+            <li class="item_bar"><a href="../../cua-thuy-luc/cau-thang-kinh/cau-thang-kinh.html">Cầu thang kính</a></li>
+            <li class="item_bar"><a href="../../bao-gia/bao-gia-cua-nhom/bao-gia-cua-nhom-kinh.html">Báo giá cửa nhôm
+                    kính</a></li>
+            <li class="item_bar"><a href="../../bao-gia/bao-gia-kinh-cuong-luc/bao-gia-kinh-cuong-luc.html">Báo giá kính
+                    cường lực</a></li>
+            <li class="item_bar"><a href="index.html"><span>Cửa nhôm Việt Pháp</span></a></li>
+            <li class="item_bar"><a href="gioithieu.html"><span>Cửa đi nhôm kính</span></a></li>
+            <li class="item_bar"><a href="news.html">Cửa số nhôm kính</a></li>
+            <li class="item_bar"><a href="congtrinh.html">Tủ nhôm kính, chạn bát đĩa</a></li>
+            <li class="item_bar"><a href="tuyendung.html">Cửa nhôm kính XingFa nhập khẩu</a></li>
+
         </ul>
     </nav>
 
@@ -359,7 +396,77 @@
 
 
                     <!-- SẢN PHẨM LIÊN QUAN -->
+                    <div class="product_right mt-4">
+                        <div class="content-section  kinhCuongLuc row_card" id="kinhCuongLuc1">
+                            <div class="group-title mb-4">
+                                <span class="title mb-4" style="font-size: 16px;">Sản Phẩm Liên Quan</span>
+                            </div>
+                            <div class="row product_right_content content_news">
+                                <div class="col-md-4 mb-2  ">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./bao-gia-phong-tam-kinh-vach-tam-kinh-cuong-luc.html">
+                                                <img class="img-fluid" src="../../img/vach-kinh-phong-tam-nho.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a
+                                            href="./bao-gia-phong-tam-kinh-vach-tam-kinh-cuong-luc.html">
+                                            BÁO GIÁ PHÒNG TẮM KÍNH, VÁCH TẮM</a></div>
 
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./bao-gia-cua-kinh-cuong-luc.html">
+                                                <img class="img-fluid" src="../../img/kinh-cuong-luc-10mm.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./bao-gia-cua-kinh-cuong-luc.html">
+                                            BÁO GIÁ CỬA KÍNH CƯỜNG LỰC</a></div>
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./bao-gia-vach-kinh-cuong-luc.html">
+                                                <img class="img-fluid"
+                                                    src="../../img/vach-ngan-phong-khach-bang-kinh-cuong-luc-01.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./bao-gia-vach-kinh-cuong-luc.html">
+                                            BÁO GIÁ VÁCH KÍNH CƯỜNG LỰC</a></div>
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./bao-gia-tranh-kinh-nghe-thuat.html">
+                                                <img class="img-fluid"
+                                                    src="../../img/tranh-kinh-nghe-thuat-cho-phong-khach1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./bao-gia-tranh-kinh-nghe-thuat.html">
+                                            BÁO GIÁ TRANH KÍNH NGHỆ THUẬT</a></div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
 
                 </div>
 
@@ -375,9 +482,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="container footer_container">
+        <div class="container footer_container py-5 px-2 px-md-0">
             <div class="row">
-                <div class="col-4 contact">
+                <div class="col-12 col-md-4 contact ">
                     <div class="title">Thông tin liên hệ</div>
                     <h5>Showroom Nhôm Kính Trang Anh</h5>
                     <p>Cơ sở 1:Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
@@ -386,7 +493,7 @@
                     </p>
                     <p> <a href=" tel:0946212022"><span>Fax</span> : 0946212022</a></p>
                 </div>
-                <div class=" col-4 gioiThieu">
+                <div class="col-12 col-md-4 gioiThieu ">
                     <div class="title">Giới thiệu</div>
                     <div style="display: flex;align-items: center;">
                         <ul style="padding-right: 100px;">
@@ -401,10 +508,10 @@
                         </ul>
                     </div>
                     <div>
-                        <img src="../../img/dmca_protected_sml_120i.png" alt="">
+                        <img src="./img/dmca_protected_sml_120i.png" alt="">
                     </div>
                 </div>
-                <div class=" col-4 gioiThieu">
+                <div class="col-12 col-md-4 gioiThieu">
                     <div class="title">Sản phẩm</div>
                     <div style="display: flex;align-items: center;">
                         <ul style="padding-right: 40px;">
@@ -423,7 +530,7 @@
                 </div>
             </div>
             <div>
-                <p>Website: https://nhomkinhnhatanh.com</p>
+                <p>Website: https://nhomkinhtranganh.com</p>
                 <p style="font-weight: bold;"><a style="text-decoration: none;" href="zalo:0946212022">Zalo:
                         0946212022</a></p>
             </div>
@@ -453,7 +560,7 @@
     <script src="./js/owl_carousel/owl.carousel.min.js"></script>
 
     <!-- MAIN JS -->
-    <script src="./js/main.js"></script>
+    <script src="../../js/main.js"></script>
 
     <!-- <script>
         $('.carousel').carousel({
