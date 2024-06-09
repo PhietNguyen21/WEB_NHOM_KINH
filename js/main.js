@@ -125,3 +125,12 @@ function showSection(sectionId) {
     behavior: "smooth",
   });
 }
+
+// RESPONSIVE
+
+let bar = document.getElementById("bar_dropDown");
+let navBar = document.querySelector(".nav_bar");
+
+function showHideNavBar() {
+  navBar.classList.toggle("active");
+}

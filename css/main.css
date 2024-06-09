@@ -2,8 +2,9 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -87,6 +88,25 @@ header .header_content .header_right .input_Search .icon_search {
   top: 50%;
   right: 5%;
   translate: -50% -50%;
+}
+header .header_content .bar {
+  position: relative;
+  height: 20px;
+}
+header .header_content .bar span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  border-radius: 2px;
+  background-color: #448aff;
+}
+header .header_content .bar .bar1 {
+  top: 20%;
+}
+header .header_content .bar .bar3 {
+  top: 80%;
 }
 
 .nav_bar {
@@ -492,4 +512,70 @@ th {
 
 .m2 {
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  header .header_content {
+    grid-template-columns: 90% 10%;
+  }
+  header .header_content .LOGO img {
+    width: 90px;
+    height: 50px;
+  }
+  .nav_bar.active {
+    display: block;
+  }
+  .nav_bar {
+    max-width: 100% !important;
+    text-align: center;
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 23%;
+    z-index: 9;
+    max-height: 250px;
+  }
+  .nav_bar .nav_bar_list {
+    max-height: 250px;
+    overflow: auto;
+  }
+  .nav_bar .nav_bar_list .item_bar {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .carousel {
+    padding-top: 80px;
+  }
+  .product.productChinh {
+    padding-top: 50px;
+  }
+  .product {
+    padding-top: 105px;
+  }
+  .product .product_container .row {
+    justify-content: center;
+  }
+  .product .product_container .row .product_left {
+    display: none;
+  }
+  .product .product_container .row .product_right .group-title {
+    text-align: center;
+  }
+  .product .product_container .row .product_right .group-title .title::after {
+    bottom: 0;
+  }
+  .product .product_container .row .product_right .product_right_content .text_right {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

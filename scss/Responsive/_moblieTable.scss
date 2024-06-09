@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+    // HEADER
+    header {
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+
+        .header_content {
+            grid-template-columns: 90% 10%;
+            .LOGO {
+                img {
+                    width: 90px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    // NAVBAR
+
+    .nav_bar.active {
+        display: block;
+    }
+    .nav_bar {
+        max-width: 100% !important;
+
+        text-align: center;
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 23%;
+        z-index: 9;
+        max-height: 250px;
+        .nav_bar_list {
+            max-height: 250px;
+            overflow: auto;
+            .item_bar {
+                display: block;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    // CAROUSEL
+    .carousel {
+        padding-top: 80px;
+    }
+
+    // PRODUCT
+    .product.productChinh {
+        padding-top: 50px;
+    }
+    .product {
+        padding-top: 105px;
+        .product_container {
+            .row {
+                justify-content: center;
+                .product_left {
+                    display: none;
+                }
+                .product_right {
+                    .group-title {
+                        text-align: center;
+                        .title {
+                            &::after {
+                                bottom: 0;
+                            }
+                        }
+                    }
+                    .product_right_content {
+                        .text_right {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+    }
+}
