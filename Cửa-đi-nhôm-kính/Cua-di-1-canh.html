@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        NHÔM KÍNH TRANG ANH
+    </title>
+    <!-- ICON -->
+    <link rel="icon" type="image/x-icon" href="../img/LOGO.jpg">
+
+
+    <!-- BOOSTRAP -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="header_content container">
+            <div class="LOGO">
+                <a href="../index.html"> <img class="img-fluid img_LOGO" src="../img/LOGO.jpg" alt="LOGO TRANG ANH"></a>
+
+            </div>
+            <div class="header_right d-none d-md-flex">
+                <div class="hotline item_icon">
+                    <div class="ic"><i class="fa-solid fa-phone-volume"></i></div>
+                    <a href="tel:0946212022">
+                        <p style="color:black">HOTLINE</p>
+                        <p>0946212022</p>
+                    </a>
+                </div>
+                <div class="email item_icon">
+                    <div class="ic"><i class="fa-solid fa-envelope"></i></div>
+                    <a href="mailto:nhomkinhtranganh@gmail.com">
+                        <p style="color:black">GMAIL</p>
+                        <p>nhomkinhtranganh@gmail.com</p>
+                    </a>
+                </div>
+                <div class="search input_Search">
+                    <form action="#" method="get"></form>
+                    <input type="text" class="txtSearch" name="q" placeholder="Nhập từ khóa tìm kiếm">
+                    <p class="icon_search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="d-block d-md-none bar" id="bar_dropDown" onclick="showHideNavBar()">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="nav_bar container">
+        <ul class="nav_bar_list d-none d-md-flex">
+            <li class="item_bar active"><a href="../index.html"><span>Trang chủ</span></a></li>
+            <li class="item_bar"><a href="../gioithieu.html"><span>Giới thiệu</span></a></li>
+            <li class="item_bar"><a href="../news.html">Tin Tức</a></li>
+            <li class="item_bar"><a href="../congtrinh.html">Công Trình</a></li>
+            <li class="item_bar"><a href="../tuyendung.html">Tuyển dụng</a></li>
+            <li class="item_bar"><a href="../contact.html">Liên hệ</a></li>
+        </ul>
+        <ul class="nav_bar_list d-block d-md-none" id="myLIST">
+            <li class="item_bar"><a href="../cua-thuy-luc/cua-kinh-lua/cua-kinh-lua.html">Cửa kính lùa</a></li>
+            <li class="item_bar"><a href="../cua-thuy-luc/cua-kinh-cuong-luc/kinh-cuong-luc.html">Cửa kính cường lực</a>
+            </li>
+            <li class="item_bar"><a href="../cua-thuy-luc/vach-kinh-cuong-luc/vach-kinh-cuong-luc.html">Vách kính cường
+                    lực</a></li>
+            <li class="item_bar"><a href="../cua-thuy-luc/cabin-phong-tam/cabin-phong-tam.html">Cabin phòng tắm</a></li>
+
+            <li class="item_bar"><a href="../cua-thuy-luc/kinh-op-bep/kinh-op-bep.html">Kính ốp bếp</a></li>
+            <li class="item_bar"><a href="../cua-thuy-luc/lan-can-kinh/lan-can-kinh.html">Lan can kính</a></li>
+            <li class="item_bar"><a href="../cua-thuy-luc/cau-thang-kinh/cau-thang-kinh.html">Cầu thang kính</a></li>
+            <li class="item_bar"><a href="../bao-gia/bao-gia-cua-nhom/bao-gia-cua-nhom-kinh.html">Báo giá cửa nhôm
+                    kính</a></li>
+            <li class="item_bar"><a href="../bao-gia/bao-gia-kinh-cuong-luc/bao-gia-kinh-cuong-luc.html">Báo giá kính
+                    cường lực</a></li>
+            <li class="item_bar"><a href="index.html"><span>Cửa nhôm Việt Pháp</span></a></li>
+            <li class="item_bar"><a href="../Cửa-đi-nhôm-kính/Cua-di-nhom-kinh.html"><span>Cửa đi nhôm kính</span></a>
+            </li>
+            <li class="item_bar"><a href="news.html">Cửa số nhôm kính</a></li>
+            <li class="item_bar"><a href="./tu-nhom-kinh/tu-nhom-kinh-chan-bat-dia/tu-nhom-kinh-chan-bat-dia.html">Tủ
+                    nhôm kính, chạn bát đĩa</a></li>
+            <li class="item_bar"><a href="./tu-nhom-kinh/cua-nhom-xingfa-nhap-khau/cua-nhom-xingfa-nhap-khau.html">Cửa
+                    nhôm kính XingFa nhập khẩu</a></li>
+
+        </ul>
+    </nav>
+
+
+    <!-- CAROUSEL -->
+
+
+
+    <!-- PRODUCT -->
+    <div class="product">
+        <div class="container product_container">
+            <div class="row">
+                <div class="col-3 product_left">
+                    <div class="MENU_PRODUCT">
+                        <div class="item_menu menu1">
+                            <div class="title">
+                                <p>Cửa Nhôm Kính</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../cua-nhom-VP/Cua-nhom-VP.html">Cửa nhôm Việt Pháp</a></li>
+                                <li><a href="../Cửa-đi-nhôm-kính/Cua-di-nhom-kinh.html">Cửa đi nhôm kính </a></li>
+                                <li><a href="../Cửa sổ nhôm kính/cua-so-nhom-kinh.html">Cửa sổ nhôm kính </a></li>
+                                <li><a href="../Vách ngăn nhôm kính/vach-ngan-nhom-kinh.html">Vách ngăn nhôm kính </a>
+                                </li>
+                                <li><a href="../Tủ nhôm kính, chạn bát đĩa/tu-nhom-kinh-chan-bat-dia.html">Tủ nhôm kính,
+                                        chạn bát đĩa</a></li>
+                                <li><a href="../Cửa nhôm Xingfa/cua-nhom-Xingfa.html">Cửa nhôm Xingfa nhập khẩu </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu2">
+                            <div class="title">
+                                <p>CỬA THỦY LỰC</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../cua-thuy-luc/cua-kinh-lua/cua-kinh-lua.html">Cửa kính lùa</a></li>
+                                <li onclick="showSection('kinhCuongLuc')"><a
+                                        href="../cua-thuy-luc/cua-kinh-cuong-luc/kinh-cuong-luc.html">Cửa kính cường lực
+                                    </a></li>
+                                <li onclick="showSection('vachKinhCuongLuc')">
+                                    <a href="../cua-thuy-luc/vach-kinh-cuong-luc/vach-kinh-cuong-luc.html">Vách kính
+                                        cường lực</a>
+                                </li>
+                                <li onclick="showSection('cabinPhongTam')"><a
+                                        href="../cua-thuy-luc/cabin-phong-tam/cabin-phong-tam.html">Cabin phòng tắm </a>
+                                </li>
+                                <li onclick="showSection('kinhOpBep')"><a
+                                        href="../cua-thuy-luc/kinh-op-bep/kinh-op-bep.html">Kính ốp
+                                        bếp </a></li>
+                                <li onclick="showSection('lanCanKinh')"><a
+                                        href="../cua-thuy-luc/lan-can-kinh/lan-can-kinh.html">Lan
+                                        can kính</a></li>
+                                <li onclick="showSection('cauThangKinh')"><a
+                                        href="../cua-thuy-luc/cau-thang-kinh/cau-thang-kinh.html">Cầu thang kính </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_menu menu2">
+                            <div class="title">
+                                <p>MÁI KỸ THUẬT</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../../mai-ky-thuat/mai-sat-nghe-thuat/mai-sat-nghe-thuat.html">Mái khung
+                                        sắt</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                        <div class="item_menu menu3">
+                            <div class="title">
+                                <p>Báo Giá</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../bao-gia/bao-gia-cua-nhom/bao-gia-cua-nhom-kinh.html">Báo giá cửa nhôm
+                                        kính</a></li>
+                                <li><a href="../bao-gia/bao-gia-kinh-cuong-luc/bao-gia-cua-kinh-cuong-luc.html">Báo giá
+                                        kính
+                                        cường lực </a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu4">
+                            <div class="title">
+                                <p>Hỗ trợ trực tuyến</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+
+                                <li style="display: flex;align-items: center;justify-content: start;"><a
+                                        href="zalo:0946212022"><img style="width: 40px;height: 40px;margin-right: 20px"
+                                            src="../../img/Icon_of_Zalo.svg.webp" alt="zalo"> </a>
+
+                                    <a href="tel:0946212022"><i style=" color:#448aff;font-size: 30px;"
+                                            class=" fa fa-phone-volume "></i> </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="item_menu menu5">
+                            <div class="title">
+                                <p>Tin Tức Mới</p>
+                            </div>
+                            <ul class="menu_nhomKinh">
+                                <li><a href="../NEWS/8-ly-do-khien-cua-kinh-cuong-luc-duoc-ua-chuong-hien-nay.html">8
+                                        lý do khiến cửa kính cường lực được ưa chuộng hiện nay</a></li>
+                                <li><a href="../NEWS/thiet-ke-nha-o-phong-cach-hien-dai-xu-huong-moi.html">Thiết kế
+                                        nhà ở phong cách hiện đại - xu hướng mới kính </a></li>
+                                <li><a href="../bao-gia/bao-gia-kinh-cuong-luc/bao-gia-lan-can-cau-thang-kinh.html">Lan
+                                        can kính
+                                        cường lực giá bao nhiêu? </a></li>
+
+                                <li><a href="../NEWS/chia-se-ve-vach-kinh-thong-minh-cho-van-phong-dep-hien-dai.html">Chia
+                                        sẻ về vách kính thông minh cho văn phòng đẹp hiện đại </a></li>
+                                <li><a href="../NEWS/lam-tu-bep-tu-bep-nhom-kinh-gia-re-o-dau-hai-long-nhat.html">Làm
+                                        tủ bếp nhôm kính giá rẻ ở đâu hài lòng nhất?</a></li>
+                                <li><a
+                                        href="../NEWS/luu-y-khi-lua-chon-cua-nhom-cao-cap-viet-phap-xingfa-chinh-hang.html">Lưu
+                                        ý khi lựa chọn cửa nhôm cao cấp Việt Pháp / Xingfa chính hãng </a>
+                                </li>
+                                <li><a href="../NEWS/thiet-ke-thi-cong-cua-nhom-kinh-hop-phong-thuy.html">Thiết kế
+                                        thi công cửa nhôm kính hợp phong thuỷ</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 content_gioiThieu content_news">
+                    <div class="line">
+                        <a href="../../index.html">Trang chủ /</a>
+                        <a href="#">Sản phẩm /</a>
+                        <a href="#" style="font-weight: bold;color: black;">Cửa đi nhôm kính 1 cánh</a>
+                    </div>
+                    <div class="contentNews1" id="content">
+
+                        <div style="margin-top: 20px;">
+                            <h3>Cửa đi nhôm kính 1 cánh</h3>
+                            <div class="imgGioiThieu my-5 w-75" style="text-align: center;">
+                                <img class="img-fluid" src="../img/Cửa nhôm kính/cửa đi nhôm kính 1 cánh/1.jpg"
+                                    alt="...">
+                                <div class="sdt">Nhôm Kính Trang Anh 0946.212.022</div>
+                            </div>
+
+                            <p> Cửa nhôm kính được thiết kế sang trọng cho các công trình với nhiều ưu điểm để người
+                                dùng lựa chọn sử dụng. Việc sử dụng cửa đi nhôm kính mang lại hiệu quả tuyệt đối với
+                                không gian mở cho mọi căn nhà, nhất là đối với cửa đi, Chính vì vậy việc lựa chọn sản
+                                phẩm cửa đi được nhiều khách hàng quan tâm. </p>
+                            <br>
+                            <p> Cửa đi nhôm kính 1 cánh với những thiết kế hiện đại sử dụng chủ yếu cho cửa thông phòng,
+                                cửa phòng ngủ có thể là cửa lùa 1 cánh hoặc cửa mở quay 1 cánh. Hãy cùng Hải Tiến tìm
+                                hiểu về loại cửa trên.</p>
+
+                            <div class="imgGioiThieu my-5 w-75" style="text-align: center;">
+                                <img class="img-fluid" src="../img/Cửa nhôm kính/cửa đi nhôm kính 1 cánh/2.jpg"
+                                    alt="...">
+                                <div class="sdt">Nhôm Kính Trang Anh 0946.212.022</div>
+                            </div>
+                            <p class="mt-2" style="text-align: center;font-weight: bold;font-size: 17px;">Cửa đi 1 cánh
+                                nhôm kính mở quay</p>
+
+                            <p style="width: fit-content; background-color: #ffff99;font-size: 18px;font-weight: bold;">
+                                Cửa đi nhôm kính 1 cánh thi công bởi TRANG ANH
+                            </p>
+                            <p> Là một trong những đơn vị hàng đầu trong lĩnh vựa cửa nhôm, TRANG ANH Window đã có thâm
+                                niên hơn 10 năm trong nghề với đội ngũ thợ giàu kinh nghiệm, thi công nhanh và đảm bảo
+                                chính xác tuyệt đối từ kích thước, kiểu dáng đến các chi tiết nhỏ</p>
+                            <p>Cửa đi 1 cánh nhôm kính của TRANG ANH mang vẻ hiện đại, sang trọng và có sự sáng tạo
+                                trong thiết kế. Chất lượng được khách hàng đánh giá cao và ưa chuộng sử dụng dịch vụ của
+                                chúng tôi.</p>
+
+
+                            <div class="contactShop">
+                                <p>Nhôm kính Trang Anh</p>
+
+                                <p><span>Địa chỉ:</span> 14 Vũ Hữu - Thanh Xuân - Hà Nội</p>
+
+                                <p><span>Liên hệ:</span> 0946.212.022</p>
+
+                                <p><span>Email:</span> nhomkinhnhatanh@gmail.com</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="product_right mt-4">
+                        <div class="content-section  kinhCuongLuc row_card" id="kinhCuongLuc1">
+                            <div class="group-title mb-4">
+                                <span class="title mb-4">CỬA ĐI NHÔM KÍNH</span>
+                            </div>
+                            <div class="row product_right_content content_news">
+                                <div class="col-md-4 mb-2  ">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-4-canh-chia-do.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa nhôm 4 cánh chia đố/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-4-canh-chia-do.html">
+                                            CỬA NHÔM 4 CÁNH CHIA ĐỐ</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-nhom-4-canh-chia-do.html -->
+
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-so-nhom-van-go-1 canh.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa nhôm vân gỗ 1 cánh phòng ngủ/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-so-nhom-van-go-1 canh.html">CỬA NHÔM VÂN GỖ 1
+                                            CÁNH PHÒNG NGỦ</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-nhom-van-go-1-canh-phong-ngu.html -->
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-nhom-kinh-mo-quay.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính mở quay/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-nhom-kinh-mo-quay.html">CỬA ĐI NHÔM KÍNH
+                                            MỞ QUAY </a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-nhom-kinh-mo-quay.html -->
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-nhom-kinh-truot-lua.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính trượt lùa/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-nhom-kinh-truot-lua.html">CỬA ĐI NHÔM KÍNH
+                                            TRƯỢT LÙA</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-nhom-kinh-truot-lua.html -->
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-4-canh-nhom-PMA.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi 4 cánh nhôm PMA/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-4-canh-nhom-PMA.htmll">CỬA ĐI 4 CÁNH NHÔM
+                                            KÍNH PMA</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-4-canh-nhom-pma.html -->
+
+
+                                </div>
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-nhom-2-canh-cao-cap.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính 2 cánh cao cấp/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-nhom-2-canh-cao-cap.html">CỬA ĐI NHÔM KÍNH
+                                            2 CÁNH CAO CẤP</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-nhom-kinh-2-canh-cao-cap.html-->
+
+
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-1-canh.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính 1 cánh/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-1-canh.html">CỬA ĐI NHÔM KÍNH 1 CÁNH</a>
+                                    </div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-nhom-kinh-1-canh.html-->
+                                </div>
+
+
+                                <div class="col-md-4 mb-2">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-nhom-kinh-4-canh.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính 4 cánh/1.png"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-nhom-kinh-4-canh.html">CỬA ĐI NHÔM KÍNH 4
+                                            CÁNH</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-nhom-kinh-4-canh.html -->
+                                </div>
+
+                                <div class="col-md-4 mb-2  ">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-di-nhom-kinh-nvs.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính nhà vệ sinh/cua-nha-ve-sinh-bang-nhom-kinh-dep.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-di-nhom-kinh-nvs.html">
+                                            CỬA ĐI NHÔM KÍNH NHÀ VỆ SINH</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-di-nhom-kinh-nha-ve-sinh.html -->
+
+                                </div>
+
+                                <div class="col-md-4 mb-2  ">
+                                    <div class="card_item">
+                                        <div class="item_card">
+                                            <a href="./Cua-nhom-kinh-van-go.html">
+                                                <img class="img-fluid"
+                                                    src="../img/Cửa nhôm kính/cửa đi nhôm kính vân gỗ/1.jpg"
+                                                    alt="cua nhom">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text_right"><a href="./Cua-nhom-kinh-van-go.html">
+                                            CỬA NHÔM KÍNH VÂN GỖ</a></div>
+                                    <!-- https://nhomkinhhaitien.com/cua-di-nhom-kinh/cua-nhom-kinh-van-go.html -->
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- PAGINATE -->
+                <div class="pagination mt-3" id="pagiNate">
+                    <span id="pagi1" onclick="setActive(event)" class="active" data-target="row_pagi1">1</span>
+                    <span id="pagi2" onclick="setActive(event)" data-target="row_pagi2">2</span>
+                    <span id="pagi3" onclick="setActive(event)" data-target="row_pagi3">3</span>
+
+
+                    <span>&raquo;</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_container py-5 px-2 px-md-0">
+            <div class="row">
+                <div class="col-12 col-md-4 contact ">
+                    <div class="title">Thông tin liên hệ</div>
+                    <h5>Showroom Nhôm Kính Trang Anh</h5>
+                    <p>Cơ sở 1:Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
+                    <p>Cơ sở 2: Số 19 Dịch Vụ 4 - Mỗ Lao - Hà Đông - Hà Nội Điện thoại: 0912693859</p>
+                    <p><a href="tel:0946212022"><span>Hotline</span>: 0946212022</a>
+                    </p>
+                    <p> <a href=" tel:0946212022"><span>Fax</span> : 0946212022</a></p>
+                </div>
+                <div class="col-12 col-md-4 gioiThieu ">
+                    <div class="title">Giới thiệu</div>
+                    <div style="display: flex;align-items: center;">
+                        <ul style="padding-right: 100px;">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="news.html">Tin tức</a></li>
+                            <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="congtrinh.html">Công trình</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="./img/dmca_protected_sml_120i.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 gioiThieu">
+                    <div class="title">Sản phẩm</div>
+                    <div style="display: flex;align-items: center;">
+                        <ul style="padding-right: 40px;">
+                            <li><a href="">Cửa Kính Lùa</a></li>
+                            <li><a href="">Vách Kính Cường Lực</a></li>
+                            <li><a href="">Kính Ốp Bếp</a></li>
+                            <li><a href="">Cầu Thang Kính</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Cửa Kính Cường Lực</a></li>
+                            <li><a href="">Cabin Phòng Tắm</a></li>
+                            <li><a href="">Lan Can Kính</a></li>
+                            <li><a href="">Trạn nhôm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Website: https://nhomkinhtranganh.com</p>
+                <p style="font-weight: bold;"><a style="text-decoration: none;" href="zalo:0946212022">Zalo:
+                        0946212022</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="cpr" style="background-color: #fff;padding: 20px;">
+        <div class="container" style="font-size: 12px;">
+            Copyright @ 2024 Nhôm Kính Nhật Anh. Developed by Nhôm kính Nhật Anh
+        </div>
+    </div>
+    <!-- BOOSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/owl_carousel/owl.carousel.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script> -->
+</body>
+
+</html>
