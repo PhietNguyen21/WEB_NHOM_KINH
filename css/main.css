@@ -191,6 +191,11 @@ header .header_content .bar .bar3 {
   background-color: #fff; /* Màu sắc của chấm tròn hiện tại */
 }
 
+.carousel-item {
+  height: 360px;
+  object-fit: contain;
+}
+
 .product .product_container {
   padding: 0 !important;
 }

@@ -26,3 +26,8 @@
 .carousel-indicators .active {
     background-color: #fff; /* Màu sắc của chấm tròn hiện tại */
 }
+
+.carousel-item {
+    height: 360px;
+    object-fit: contain;
+}
