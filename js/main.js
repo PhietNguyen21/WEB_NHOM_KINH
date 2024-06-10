@@ -134,3 +134,24 @@ let navBar = document.querySelector(".nav_bar");
 function showHideNavBar() {
   navBar.classList.toggle("active");
 }
+
+// BACK TO TOP
+
+// Tạo nút Back to Top
+// Hiển thị nút khi cuộn xuống 100px từ đầu trang
+window.onscroll = function () {
+  var backToTopBtn = document.getElementById("backToTopBtn");
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+// Cuộn mượt mà khi nhấp vào nút
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
